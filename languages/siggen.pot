@@ -1,0 +1,311 @@
+# Copyright (C) 2017 siggen
+# This file is distributed under the same license as the siggen package.
+msgid ""
+msgstr ""
+"Project-Id-Version: siggen\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: Kniffen <knifftech@gmail.com>\n"
+"Last-Translator: Kniffen <knifftech@gmail.com>\n"
+"Report-Msgid-Bugs-To: https://github.com/kniffen/Siggen/issues\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: 404.php:14
+msgid "This is somewhat embarrassing, isn&rsquo;t it?"
+msgstr ""
+
+#: 404.php:15
+msgid "It looks like nothing was found at this location."
+msgstr ""
+
+#. translators: %s: post title
+#: comments.php:21
+msgctxt "comments title"
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr ""
+
+#: comments.php:25
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:59
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:33
+msgid "Theme: <a href=\"%2$s\">%1$s</a>"
+msgstr ""
+
+#: functions.php:72
+msgctxt "Vaping individual"
+msgid "vaping360"
+msgstr ""
+
+#: functions.php:93
+msgid "Header Menu"
+msgstr ""
+
+#: functions.php:94
+msgid "Footer Menu"
+msgstr ""
+
+#: functions.php:107
+msgid "Top Widget Area"
+msgstr ""
+
+#: functions.php:109
+msgid "Widget area above the content"
+msgstr ""
+
+#: functions.php:117
+msgid "Sidebar Widget Area"
+msgstr ""
+
+#: functions.php:119
+msgid "Widget area at the side of the content"
+msgstr ""
+
+#: functions.php:127
+msgid "Footer Widget Area"
+msgstr ""
+
+#: functions.php:129
+msgid "Widget area in the footer"
+msgstr ""
+
+#: image.php:24
+msgid "Previous Image"
+msgstr ""
+
+#: image.php:25
+msgid "Next Image"
+msgstr ""
+
+#: searchform.php:11, searchform.php:12
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:12
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#: searchform.php:14
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: inc/customize.php:19
+msgid "Display Site Title"
+msgstr ""
+
+#: inc/customize.php:31
+msgid "Display Tagline"
+msgstr ""
+
+#: inc/customize.php:43
+msgid "Text Color"
+msgstr ""
+
+#: inc/customize.php:55
+msgid "Link Color"
+msgstr ""
+
+#: inc/customize.php:67
+msgid "Site information color"
+msgstr ""
+
+#: inc/customize.php:79
+msgid "Menu background"
+msgstr ""
+
+#: inc/customize.php:91
+msgid "Menu text color"
+msgstr ""
+
+#: inc/customize.php:103
+msgid "Sepia filter on images"
+msgstr ""
+
+#: inc/customize.php:110
+msgid "Entry Metadata"
+msgstr ""
+
+#: inc/customize.php:121
+msgid "Display author"
+msgstr ""
+
+#: inc/customize.php:133
+msgid "Display date posted"
+msgstr ""
+
+#: inc/customize.php:145
+msgid "Display comment count"
+msgstr ""
+
+#: inc/customize.php:157
+msgid "Display Post Format"
+msgstr ""
+
+#: inc/customize.php:169
+msgid "Display Categories"
+msgstr ""
+
+#: inc/customize.php:181
+msgid "Display Tags"
+msgstr ""
+
+#: inc/customize.php:193
+msgid "Display Author Bio"
+msgstr ""
+
+#: inc/customize.php:200
+msgid "Theme options"
+msgstr ""
+
+#: inc/customize.php:211
+msgid "Display breadcrumbs"
+msgstr ""
+
+#: inc/customize.php:223
+msgid "Display full content of posts on index pages"
+msgstr ""
+
+#: inc/customize.php:235
+msgid "Display thumbnails on index pages"
+msgstr ""
+
+#: inc/customize.php:247
+msgid "Display thumbnails on content pages"
+msgstr ""
+
+#: inc/customize.php:259
+msgid "Center widgets"
+msgstr ""
+
+#: inc/customize.php:271
+msgid "Display read more button"
+msgstr ""
+
+#: inc/customize.php:278
+msgid "Social Media Icons"
+msgstr ""
+
+#: inc/customize.php:289
+msgid "RSS Link"
+msgstr ""
+
+#: inc/customize.php:312
+msgid "Footer"
+msgstr ""
+
+#: inc/customize.php:323
+msgid "Footer text"
+msgstr ""
+
+#: inc/customize.php:335
+msgid "Show Copyright Icon"
+msgstr ""
+
+#: inc/customize.php:347
+msgid "Show Current Year"
+msgstr ""
+
+#: inc/customize.php:359
+msgid "Advertise Theme"
+msgstr ""
+
+#: inc/customize.php:371
+msgid "Scroll to top icon in footer"
+msgstr ""
+
+#: template-parts/author_bio.php:15
+msgid "Author:"
+msgstr ""
+
+#: template-parts/content-none.php:9
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:12
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:15
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:18
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: template-parts/content.php:27
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content.php:31
+msgid "Page"
+msgstr ""
+
+#: template-parts/content.php:41
+msgid "Next post:"
+msgstr ""
+
+#: template-parts/content.php:42, template-parts/loop.php:50
+msgid "Next"
+msgstr ""
+
+#: template-parts/content.php:44
+msgid "Previous post:"
+msgstr ""
+
+#: template-parts/content.php:45
+msgid "Previous"
+msgstr ""
+
+#: template-parts/content_header.php:17
+msgid "Search Results for: %s"
+msgstr ""
+
+#: template-parts/content_header.php:20
+msgid "404 Not Found"
+msgstr ""
+
+#: template-parts/content_header.php:23
+msgid "Untitled Post"
+msgstr ""
+
+#: template-parts/entry_meta.php:86
+msgctxt "Used before post format."
+msgid "Format"
+msgstr ""
+
+#: template-parts/entry_meta.php:95
+msgid "Edit"
+msgstr ""
+
+#: template-parts/loop.php:17
+msgid "Untitled post"
+msgstr ""
+
+#: template-parts/loop.php:32
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: template-parts/loop.php:40
+msgid "Read more"
+msgstr ""
+
+#: template-parts/loop.php:49
+msgid "Back"
+msgstr ""

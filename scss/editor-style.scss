@@ -1,0 +1,49 @@
+/*
+Theme Name: Siggen
+Description: Used to style the TinyMCE editor.
+*/
+
+@import "00-variables";
+@import url( 'style.css' );
+
+body{ 
+  margin: 20px;
+  background-color: white;
+  color: black;
+}
+
+img{ filter: none !important; }
+
+.mce-item-table{
+  th,
+  td{
+    border: 1px solid $borderColor;
+  }
+}
+
+.wp-caption-text,
+.gallery-caption,
+.wp-caption-dd{
+  text-align: center;
+  padding: 8px 0px 10px;
+}
+
+.gallery,
+.gallery-item{
+  float: none !important;
+}
+
+.gallery-item{
+  margin: 0 0 16px 0 !important;
+}
+
+.post-format-quote,
+.post-format-status,
+.post-format-link,
+.post-format-audio{
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.post-format-chat p:nth-child(odd){ background-color: rgba(black, .2); }

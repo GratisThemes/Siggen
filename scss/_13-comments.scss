@@ -1,0 +1,69 @@
+/* 13.0 Comments */
+.comments-title{ text-align: center; }
+
+.comments-area{
+	margin: 2em 0;
+	
+	label{ display: block; }
+}
+
+.comment,
+.pingback{
+	border-top: 1px solid $borderColor;
+	padding-top: 10px;
+	margin-top: 10px;
+	list-style: none;
+}
+
+.comment{
+	padding: .5em;
+}
+
+.pingback{
+	font-weight: bold;
+	a{ font-weight: normal; }
+}
+
+.comment-meta{
+	line-height: 28px;
+	margin-bottom: 1em;
+}
+
+.comment-author{
+	margin-bottom: 0;
+
+	.avatar{
+    position: relative;
+		float: left;
+		margin-right: .5em;
+    width: 42px;
+		height: 42px;
+    top: 0.25em;
+	}
+}
+
+.bypostauthor{ 
+	.comment-author:before{
+		content: '\f040';
+		font-family: FontAwesome;
+	}
+}
+
+.comment-metadata a{
+	font-weight: normal;
+	font-size: .7em;
+}
+
+.comment-reply-link{
+	font-size: .9em;
+	padding: .1em .2em;
+}
+
+.comment-respond{
+	border-top: 1px solid $borderColor;
+	padding-top: 10px;
+}
+
+.comment-reply-title{ margin-bottom: 10px; }
+
+.comment-form a{ font-weight: normal; }

@@ -1,0 +1,48 @@
+/* 9.0 Post format */
+.single-format-video .post{
+  iframe,
+  video,
+  embed,
+  object,
+  .video-player,
+  .videopress-placeholder{
+    display: block;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.single-format-image .post{
+  img,
+  .wp-caption{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.single-format-quote .post,
+.single-format-status .post,
+.single-format-link .post,
+.single-format-audio .post{
+  background-color: $buttonColor;
+  border-radius: 2px;
+  padding: 1em;
+  text-align: center;
+}
+
+.single-format-quote .post,
+.single-format-status .post,
+.single-format-link .post,
+.single-format-audio .post{
+  color: black;
+  font-weight: bold;
+  font-size: 2em;
+
+  a{ color: black; }
+}
+
+.single-format-link .post a{ display: block; }
+
+.single-format-chat .post p:nth-child(odd){ background-color: rgba(black, .2); }

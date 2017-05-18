@@ -1,0 +1,17 @@
+/* 8.0 Content */
+.sticky .archive-entry-header h3:before{
+	content: '\f08d';
+	font-family: FontAwesome;
+	padding-right: .5em;
+}
+
+.archive-entry{	margin-bottom: 3em;	}
+
+.hentry a{
+	text-decoration: underline;
+	&:hover{ text-decoration: none; }
+}
+
+.single{
+  .post{ margin-bottom: 1em; }
+}

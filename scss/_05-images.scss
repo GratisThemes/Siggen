@@ -1,0 +1,118 @@
+/* 5.0 Images */
+img{
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	filter: sepia(100%);
+	transition: .3s;
+
+	&:hover{ filter: sepia(0%); }
+}
+
+.avatar{ filter: none !important; }
+
+/* WP-alignment */
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail,
+.alignnone,
+.wp-caption{
+	max-width: 100%;
+	height: auto;
+}
+.alignright{
+	float: right;
+	margin: 0 0 1em 1em;
+}
+.alignleft{
+	float: left;
+	margin: 0 1em 1em 0;
+	
+}
+.aligncenter{ 
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto; 
+}
+
+/* Thumbnails and attachment */
+.post-thumbnail,
+.entry-attachment{
+	display: block;
+	margin-bottom: .5em;
+	
+	img{ 
+		display: block;
+		margin: 0 auto; 
+	}
+}
+
+/* WP-Caption */
+.wp-caption,
+.gallery-item{
+	background-color: $captionBackgroundColor;
+}
+
+.wp-caption-text,
+.gallery-caption{
+	color: $captionColor;
+	padding: .5em;
+	text-align: center;
+	font-size: .8em;
+
+	a{ color: black; }
+}
+
+.wp-caption{
+	overflow: hidden;
+	
+	img{ vertical-align: middle; }
+}
+
+.gallery{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.gallery-item{
+	display: inline-block;
+	width: 100%;
+	width: calc(33.33% - 1em);
+	margin-bottom: 2em;
+	img{
+		width: 100%;
+	}
+}
+
+.gallery-columns-1 .gallery-item{ width: 100%; }
+.gallery-columns-2 .gallery-item{ width: calc(50% - 2em); }
+.gallery-columns-3 .gallery-item{ width: calc(33.33% - 2em); }
+.gallery-columns-4 .gallery-item{ width: calc(25% - 2em); }
+.gallery-columns-5 .gallery-item{ width: calc(20% - 2em); }
+.gallery-columns-6 .gallery-item{ width: calc(16.66% - 2em); }
+.gallery-columns-7 .gallery-item{ width: calc(14.28% - 2em); }
+.gallery-columns-8 .gallery-item{ width: calc(12.5% - 2em); }
+.gallery-columns-9 .gallery-item{ width: calc(11.11% - 2em); }
+
+.gallery-columns-5,
+.gallery-columns-6,
+.gallery-columns-7,
+.gallery-columns-8,
+.gallery-columns-9{
+	.gallery-item{ margin-bottom: 0; }
+}
+
+@media (max-width: 900px){
+	.gallery .gallery-item{ 
+		width: calc(50% - .5em); 
+		margin-bottom: .5em;
+	}
+}
+
+@media (max-width: 650px){
+	.gallery .gallery-item{ width: 100%; }
+}

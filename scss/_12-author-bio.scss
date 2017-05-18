@@ -1,0 +1,25 @@
+/* 12.0 Author bio */
+.author-bio{
+	display: flex;
+	margin-bottom: 2em;
+
+	h2{ margin: 0 0 .5em; }
+
+	.avatar{
+		margin-right: .5em;
+		height: 50px;
+		width: 50px;
+		filter: none;
+	}
+
+	.author-title{ font-size: .8em; }
+
+	p{
+		font-size: .75em;
+		margin: 0;
+	}
+}
+
+@media (max-width: 650px){
+	.author-bio{ display: block; }
+}

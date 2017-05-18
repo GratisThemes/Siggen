@@ -1,0 +1,52 @@
+/* 15.0 Footer */
+#site-footer{
+	position: relative;
+	margin-top: 2em;
+}
+
+#footer-information{
+	display: flex;
+	flex-direction: row;
+	font-size: .75em;
+	text-align: center;
+	padding: 1em 0;
+	justify-content: center;
+
+	span:not(:last-child){
+		padding-right: .5em;
+		margin-right: .5em;
+		border-right: 1px solid $borderColor;
+	}
+}
+
+/* Scroll to top icon */
+#scroll-to-top{
+	background-color: black;
+	background-color: rgba(black, .8);
+	font-size: 1.6em;
+	border: 1px solid $borderColor;
+	border-radius: 2px;
+	color: $borderColor;
+	
+	display: none;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	
+	position: fixed;
+	z-index: 999;
+	bottom: 20px;
+	right: 20px;
+}
+
+@media (max-width: 650px){
+	#footer-information,
+	#footer-information span{ display: block; }
+	
+	#footer-information span{
+		border: 0 !important;
+		padding: 0;
+		margin: 0;
+	}
+}
