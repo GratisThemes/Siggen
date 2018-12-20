@@ -1,49 +1,44 @@
+@charset "UTF-8";
 /*
-Theme Name: Siggen
-Description: Used to style the TinyMCE editor.
+  Theme Name: Siggen
+  Description: Used to style the TinyMCE and Gutenberg editors.
 */
 
-@import "00-variables";
-@import url( 'style.css' );
+/* Table of Contents
+  -------------------------------
+  1.0 Normalize
+  2.0 Variables
+  3.0 Layout
+  4.0 Tags and Elements
+  5.0 Form elements
+*/
 
-body{ 
-  margin: 20px;
-  background-color: white;
+/* 1.0 Normalize */
+@import "normalize";
+
+/* 2.0 Variables */
+@import "variables";
+
+/* 3.0 Layout */
+body {
+  font-family: var(--font-family);
+  margin: 1em;
+}
+
+/* 4.0 Content: Tags and Elements */
+@import "content-tags-and-elements";
+
+a {
   color: black;
 }
 
-img{ filter: none !important; }
-
-.mce-item-table{
-  th,
-  td{
-    border: 1px solid $borderColor;
-  }
+blockquote::before {
+  position: relative;
+  font-family: var(--font-family);
+  content: '“';
+  font-size: 2rem;
+  line-height: 0;
 }
 
-.wp-caption-text,
-.gallery-caption,
-.wp-caption-dd{
-  text-align: center;
-  padding: 8px 0px 10px;
-}
-
-.gallery,
-.gallery-item{
-  float: none !important;
-}
-
-.gallery-item{
-  margin: 0 0 16px 0 !important;
-}
-
-.post-format-quote,
-.post-format-status,
-.post-format-link,
-.post-format-audio{
-  text-align: center;
-  font-weight: bold;
-  font-size: 2em;
-}
-
-.post-format-chat p:nth-child(odd){ background-color: rgba(black, .2); }
+/* 5.0 Content: Form elements */
+@import "content-form-elements";

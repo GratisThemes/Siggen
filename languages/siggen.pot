@@ -1,4 +1,4 @@
-# Copyright (C) 2017 siggen
+# Copyright (C) 2018 siggen
 # This file is distributed under the same license as the siggen package.
 msgid ""
 msgstr ""
@@ -6,9 +6,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language-Team: Kniffen <knifftech@gmail.com>\n"
-"Last-Translator: Kniffen <knifftech@gmail.com>\n"
-"Report-Msgid-Bugs-To: https://github.com/kniffen/Siggen/issues\n"
+"Language-Team: GratisThemes <gratisthemes@gmail.com>\n"
+"Last-Translator: GratisThemes <gratisthemes@gmail.com>\n"
+"Report-Msgid-Bugs-To: https://github.com/GratisThemes/Siggen/issues\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -16,78 +16,96 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: 404.php:14
-msgid "This is somewhat embarrassing, isn&rsquo;t it?"
+#: 404.php:19
+msgid "404 Not Found"
 msgstr ""
 
-#: 404.php:15
-msgid "It looks like nothing was found at this location."
+#: 404.php:24
+msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
 
-#. translators: %s: post title
+#: 404.php:26
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: archive.php:31, index.php:37
+msgid "Back"
+msgstr ""
+
+#: archive.php:32, index.php:38, search.php:40, template-parts/entry-footer.php:42
+msgid "Next"
+msgstr ""
+
 #: comments.php:21
-msgctxt "comments title"
-msgid "One thought on &ldquo;%s&rdquo;"
-msgstr ""
-
-#: comments.php:25
 msgctxt "comments title"
 msgid "%1$s thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: comments.php:59
-msgid "Comments are closed."
+#: comments.php:50, comments.php:50
+msgid "Older comments"
 msgstr ""
 
-#: footer.php:33
-msgid "Theme: <a href=\"%2$s\">%1$s</a>"
+#: comments.php:51, comments.php:51
+msgid "Newer comments"
 msgstr ""
 
-#: functions.php:72
+#: footer.php:39
+msgid "Theme: %s"
+msgstr ""
+
+#: footer.php:54
+msgid "Scroll to the top"
+msgstr ""
+
+#: functions.php:89
 msgctxt "Vaping individual"
 msgid "vaping360"
 msgstr ""
 
-#: functions.php:93
-msgid "Header Menu"
+#: functions.php:95
+msgid "Header"
 msgstr ""
 
-#: functions.php:94
-msgid "Footer Menu"
+#: functions.php:96, inc/customizer.php:298
+msgid "Footer"
 msgstr ""
 
-#: functions.php:107
-msgid "Top Widget Area"
+#: header.php:35
+msgid "Toggle menu"
 msgstr ""
 
-#: functions.php:109
-msgid "Widget area above the content"
-msgstr ""
-
-#: functions.php:117
-msgid "Sidebar Widget Area"
-msgstr ""
-
-#: functions.php:119
-msgid "Widget area at the side of the content"
-msgstr ""
-
-#: functions.php:127
-msgid "Footer Widget Area"
-msgstr ""
-
-#: functions.php:129
-msgid "Widget area in the footer"
-msgstr ""
-
-#: image.php:24
+#: image.php:32
 msgid "Previous Image"
 msgstr ""
 
-#: image.php:25
+#: image.php:35
 msgid "Next Image"
+msgstr ""
+
+#: search.php:20
+msgid "Search results for: %s"
+msgstr ""
+
+#: search.php:25
+msgid "Nothing found"
+msgstr ""
+
+#: search.php:39
+msgid "Prev"
+msgstr ""
+
+#: search.php:39
+msgid "Previous page"
+msgstr ""
+
+#: search.php:40
+msgid "Next page"
+msgstr ""
+
+#: search.php:41
+msgid "Page"
 msgstr ""
 
 #: searchform.php:11, searchform.php:12
@@ -105,207 +123,205 @@ msgctxt "submit button"
 msgid "Search"
 msgstr ""
 
-#: inc/customize.php:19
+#: inc/customizer.php:17
 msgid "Display Site Title"
 msgstr ""
 
-#: inc/customize.php:31
+#: inc/customizer.php:29
 msgid "Display Tagline"
 msgstr ""
 
-#: inc/customize.php:43
+#: inc/customizer.php:41
 msgid "Text Color"
 msgstr ""
 
-#: inc/customize.php:55
+#: inc/customizer.php:53
 msgid "Link Color"
 msgstr ""
 
-#: inc/customize.php:67
+#: inc/customizer.php:65
+msgid "Border Color"
+msgstr ""
+
+#: inc/customizer.php:77
 msgid "Site information color"
 msgstr ""
 
-#: inc/customize.php:79
+#: inc/customizer.php:89
 msgid "Menu background"
 msgstr ""
 
-#: inc/customize.php:91
+#: inc/customizer.php:101
 msgid "Menu text color"
 msgstr ""
 
-#: inc/customize.php:103
+#: inc/customizer.php:113
 msgid "Sepia filter on images"
 msgstr ""
 
-#: inc/customize.php:110
+#: inc/customizer.php:120
 msgid "Entry Metadata"
 msgstr ""
 
-#: inc/customize.php:121
+#: inc/customizer.php:131
 msgid "Display author"
 msgstr ""
 
-#: inc/customize.php:133
+#: inc/customizer.php:143
 msgid "Display date posted"
 msgstr ""
 
-#: inc/customize.php:145
+#: inc/customizer.php:155
 msgid "Display comment count"
 msgstr ""
 
-#: inc/customize.php:157
+#: inc/customizer.php:167
 msgid "Display Post Format"
 msgstr ""
 
-#: inc/customize.php:169
+#: inc/customizer.php:179
 msgid "Display Categories"
 msgstr ""
 
-#: inc/customize.php:181
+#: inc/customizer.php:191
 msgid "Display Tags"
 msgstr ""
 
-#: inc/customize.php:193
+#: inc/customizer.php:203
 msgid "Display Author Bio"
 msgstr ""
 
-#: inc/customize.php:200
+#: inc/customizer.php:210
 msgid "Theme options"
 msgstr ""
 
-#: inc/customize.php:211
-msgid "Display breadcrumbs"
-msgstr ""
-
-#: inc/customize.php:223
+#: inc/customizer.php:221
 msgid "Display full content of posts on index pages"
 msgstr ""
 
-#: inc/customize.php:235
+#: inc/customizer.php:233
 msgid "Display thumbnails on index pages"
 msgstr ""
 
-#: inc/customize.php:247
+#: inc/customizer.php:245
 msgid "Display thumbnails on content pages"
 msgstr ""
 
-#: inc/customize.php:259
-msgid "Center widgets"
-msgstr ""
-
-#: inc/customize.php:271
+#: inc/customizer.php:257
 msgid "Display read more button"
 msgstr ""
 
-#: inc/customize.php:278
+#: inc/customizer.php:264
 msgid "Social Media Icons"
 msgstr ""
 
-#: inc/customize.php:289
+#: inc/customizer.php:275
 msgid "RSS Link"
 msgstr ""
 
-#: inc/customize.php:312
-msgid "Footer"
-msgstr ""
-
-#: inc/customize.php:323
+#: inc/customizer.php:309
 msgid "Footer text"
 msgstr ""
 
-#: inc/customize.php:335
+#: inc/customizer.php:321
 msgid "Show Copyright Icon"
 msgstr ""
 
-#: inc/customize.php:347
+#: inc/customizer.php:333
 msgid "Show Current Year"
 msgstr ""
 
-#: inc/customize.php:359
+#: inc/customizer.php:345
 msgid "Advertise Theme"
 msgstr ""
 
-#: inc/customize.php:371
+#: inc/customizer.php:357
 msgid "Scroll to top icon in footer"
 msgstr ""
 
-#: template-parts/author_bio.php:15
-msgid "Author:"
-msgstr ""
-
-#: template-parts/content-none.php:9
-msgid "Nothing Found"
-msgstr ""
-
-#: template-parts/content-none.php:12
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
-
-#: template-parts/content-none.php:15
-msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr ""
-
-#: template-parts/content-none.php:18
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr ""
-
-#: template-parts/content.php:27
-msgid "Pages:"
-msgstr ""
-
-#: template-parts/content.php:31
-msgid "Page"
-msgstr ""
-
-#: template-parts/content.php:41
-msgid "Next post:"
-msgstr ""
-
-#: template-parts/content.php:42, template-parts/loop.php:50
-msgid "Next"
-msgstr ""
-
-#: template-parts/content.php:44
-msgid "Previous post:"
-msgstr ""
-
-#: template-parts/content.php:45
-msgid "Previous"
-msgstr ""
-
-#: template-parts/content_header.php:17
-msgid "Search Results for: %s"
-msgstr ""
-
-#: template-parts/content_header.php:20
-msgid "404 Not Found"
-msgstr ""
-
-#: template-parts/content_header.php:23
-msgid "Untitled Post"
-msgstr ""
-
-#: template-parts/entry_meta.php:86
-msgctxt "Used before post format."
-msgid "Format"
-msgstr ""
-
-#: template-parts/entry_meta.php:95
-msgid "Edit"
-msgstr ""
-
-#: template-parts/loop.php:17
-msgid "Untitled post"
-msgstr ""
-
-#: template-parts/loop.php:32
-msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
-msgstr ""
-
-#: template-parts/loop.php:40
+#: inc/filters.php:22
 msgid "Read more"
 msgstr ""
 
-#: template-parts/loop.php:49
-msgid "Back"
+#: inc/filters.php:59
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: inc/filters.php:61
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: inc/filters.php:63
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr ""
+
+#: inc/widget-areas.php:12
+msgid "Top Widget Area"
+msgstr ""
+
+#: inc/widget-areas.php:14
+msgid "Widget area above the content"
+msgstr ""
+
+#: inc/widget-areas.php:22
+msgid "Sidebar Widget Area"
+msgstr ""
+
+#: inc/widget-areas.php:24
+msgid "Widget area at the side of the content"
+msgstr ""
+
+#: inc/widget-areas.php:32
+msgid "Footer Widget Area"
+msgstr ""
+
+#: inc/widget-areas.php:34
+msgid "Widget area in the footer"
+msgstr ""
+
+#: template-parts/content-aside.php:21, template-parts/content-status.php:21
+msgid "%1$s @ %2$s"
+msgstr ""
+
+#: template-parts/content-aside.php:31, template-parts/content-page.php:18, template-parts/content-status.php:31, template-parts/entry-header.php:91
+msgid "Edit"
+msgstr ""
+
+#: template-parts/content-aside.php:46, template-parts/content-audio.php:46, template-parts/content-chat.php:30, template-parts/content-gallery.php:32, template-parts/content-image.php:24, template-parts/content-link.php:48, template-parts/content-page.php:43, template-parts/content-quote.php:34, template-parts/content-status.php:59, template-parts/content-video.php:46, template-parts/content.php:30
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-none.php:11
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: template-parts/entry-footer.php:14
+msgid "tags"
+msgstr ""
+
+#: template-parts/entry-footer.php:25
+msgid "Author: %1$s"
+msgstr ""
+
+#: template-parts/entry-footer.php:41
+msgid "Next post:"
+msgstr ""
+
+#: template-parts/entry-footer.php:44
+msgid "Previous post:"
+msgstr ""
+
+#: template-parts/entry-footer.php:45
+msgid "Previous"
+msgstr ""
+
+#: template-parts/entry-header.php:14, template-parts/entry-header.php:19
+msgid "Untitled post"
+msgstr ""
+
+#: template-parts/entry-header.php:83
+msgid "categories"
 msgstr ""

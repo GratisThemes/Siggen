@@ -1,13 +1,18 @@
 <?php
 /**
- * Template for displaying a widget area and additional content
+ * Template for displaying the right sidebar widget area
  *
  * @package Siggen
- * @since Siggen 1.0
+ * @since 1.0.0
  */
+?>
 
-if ( is_active_sidebar( 'sidebar-widget-area' )  ) : ?>
-	<aside id="sidebar-widget-area" class="sidebar widget-area" role="complementary">
-		<?php dynamic_sidebar( 'sidebar-widget-area' ); ?>
-	</aside><!-- #sidebar-widget-area .sidebar .widget-area -->
+<?php if ( is_active_sidebar( 'sidebar-widget-area' ) ): ?>
+
+  <aside id="widget-area-sidebar" class="widget-area">
+
+    <?php dynamic_sidebar( 'sidebar-widget-area' ); ?>
+
+  </aside>
+
 <?php endif; ?>

@@ -1,0 +1,176 @@
+/* Header text */
+:root {
+  font-size: var(--font-size);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: .25em 0 .5em;
+}
+
+h1,
+h2,
+h5,
+h6{ font-weight: normal; }
+
+h3{ font-weight: bold;}
+
+h4,
+h5{ font-style: italic; }
+
+h1{ font-size: 3em; }
+
+h2{ font-size: 2.6em; }
+
+h3,
+h4,
+h5,
+h6{ font-size: 2em; }
+
+/* Paragraph tag */
+p {
+  line-height: 1.5em;
+  margin: 0 0 1.5em;
+}
+
+q::before,
+blockquote::before {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  content: "\f10e";
+  padding-right: .25em;
+}
+
+blockquote {
+  font-style: italic;
+  margin: 0 0 1.5em 0;
+}
+
+/* Tables */
+table,
+td,
+th {
+  border: 0.0625em solid var(--color-border);
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-width: 0.0625em 0 0 0.0625em;
+  max-width: 100%;
+  margin-bottom: 1.5em;
+  word-wrap: normal;
+}
+
+td,
+th {
+  border-width: 0 0.0625em 0.0625em 0;
+  text-align: left;
+  padding: .5em;
+  
+}
+
+/* Defintion lists */
+dt { 
+  font-weight: bold; 
+}
+
+dd { 
+  margin: 0 0 1em 1.5em; 
+}
+
+/* Lists */
+ul,
+ol {
+  margin: 0 0 0 2em;
+  padding: 0;
+}
+
+li {
+  margin: .5em 0;
+}
+
+/* Address tag*/
+address {
+  font-style: italic;
+  margin-bottom: 1.5em;
+}
+
+/* Anchor tag*/
+a {
+  color: var(--color-anchor);
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+/* Abbreviation tag*/
+abbr {
+  cursor: help;
+}
+
+/* Acronym tag */
+acronym {
+  cursor: help;
+}
+
+/* Cite tag */
+cite {
+  font-style: italic;
+}
+
+/* Code tag */
+code {
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  border-radius: .15em;
+  padding: 0 .25em;
+}
+
+/* Horisontal rule tag */
+hr {
+  width: 100%;
+  border: none;
+  height: 0.0625em;
+  background-color: var(--color-border);
+}
+
+/* Insert tag */
+ins {
+  text-decoration: none;
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  padding: 0 .25em;
+}
+
+/* Preformated text */
+pre {
+  background-color: rgba(0,0,0,.1);
+  border: 0.0625em dotted var(--color-border);
+  border-radius: 0.1875em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em;
+  word-wrap: normal;
+}
+
+/* quotes */
+q {
+  font-style: italic;
+}
+
+@media only screen and (max-width: 768px) {
+  table {
+    display: inline-block;
+    overflow: hidden;
+    overflow-x: auto;
+  }
+}

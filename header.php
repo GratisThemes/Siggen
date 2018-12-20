@@ -1,64 +1,68 @@
 <?php
 /**
- * The template for displaying the header
- *
- * Displays all of the head element and everything up until the "site-content" div.
+ * The template for displaying the head
+ * Displays all of the head element and everything up until the content.
  *
  * @package Siggen
- * @since Siggen 1.0
+ * @since 1.0.0
  */
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
+
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<?php wp_head(); ?>
+  <meta charset="<?php bloginfo( 'charset' ); ?>">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="profile" href="http://gmpg.org/xfn/11">
+  
+  <?php if ( is_singular() && pings_open() ) : ?>
+    <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+  <?php endif;?>
+
+  <?php wp_head(); ?>
 </head>
+
 <body <?php body_class(); ?>>
-	<header id="site-header" class="container">
-		<?php if ( has_nav_menu( 'header' ) ):?>
-			<i class="fa fa-bars menu-toggle"></i>
-		<?php endif; ?>
-		
-		<?php siggen_social_media(); ?>
+  
+  <div id="site-wrapper">
+    
+    <div id="header-nav-container">
+      <?php if ( has_nav_menu( 'header' ) ): ?>
+        <input type="checkbox" id="header-nav-toggle" />
 
-		<?php if ( has_nav_menu( 'header' ) ): ?>
-			<div id="header-menu-container">
-				<i class="fa fa-times menu-toggle"></i>
+        <label for="header-nav-toggle" id="header-nav-toggle-label">
+          <span></span>
+          <span class="screen-reader-text"><?php _e( 'Toggle menu', 'siggen' ); ?></span>
+        </label><!-- #header-nav-toggle-label -->
 
-				<?php wp_nav_menu( array(
-					'theme_location'	=> 'header',
-					'menu_class'			=> 'header-menu',
-				) ); ?>
-			</div>
-		<?php endif; ?>
-	</header>
+        <?php wp_nav_menu( array(
+          'theme_location' => 'header',
+          'menu_id'        => 'header-nav',
+          'container'      => false,
+        ) ); ?>
+      <?php endif; ?>
 
-	<div id="header-banner">
+      <?php siggen_social_links(); ?>
+    </div><!-- #header-nav-container -->
 
-		<div class="header-banner-inner container">
-			<div id="site-information">
-			
-				*
+    <header id="site-header">
+      <div id="site-header-inner">
+        <div id="site-branding">
+          <?php if ( get_theme_mod( 'display_site_title', true ) ): ?>
+            <a class="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo( 'name' ) ?>">
+            <?php bloginfo( 'name' ); ?>
+            </a><!-- .site-title -->
+          <?php endif; ?>
 
-				<?php if( function_exists( 'the_custom_logo' ) ) the_custom_logo(); ?>
+          <?php if ( function_exists( 'the_custom_logo' ) ) the_custom_logo(); ?>
 
-				<?php if( get_theme_mod('display_site_title', true) ): ?>
-					<h1 id="site-title">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
-					</h1>
-				<?php endif; ?>
-				
-				*
+          <?php if ( get_theme_mod( 'display_tagline', true ) ): ?>
+            <span class="site-tagline">
+              <?php bloginfo( 'description' ); ?>
+            </span><!-- .site-tagline -->
+          <?php endif; ?>
+        </div><!-- #site-branding -->
+      </div><!-- #site-header-inner -->
+    </header><!-- #site-header -->
 
-				<?php if( get_theme_mod('display_tagline', true) ):?>
-					<p id="site-tagline"><?php bloginfo( 'description' ) ?></p>	
-					*
-				<?php endif; ?>
-			</div>
-		</div>
-	</div>
-
-	<?php get_sidebar('top'); ?>
+    <?php get_sidebar( 'top' ); ?>

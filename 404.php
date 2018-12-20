@@ -1,21 +1,37 @@
 <?php
 /**
- * Template for displaying 404 pages (not found)
+ * Template for displaying 404 Not Found error
  *
  * @package Siggen
- * @since Siggen 1.0
+ * @since 1.0.0
  */
-get_header(); ?>
+?>
 
-<div class="site-content container">
-	<main>
-		<?php get_template_part('template-parts/content_header'); ?>
-	
-		<p><?php _e( 'This is somewhat embarrassing, isn&rsquo;t it?', 'siggen' ); ?></p>
-		<p><?php _e( 'It looks like nothing was found at this location.', 'siggen' ); ?></p>
-	</main>
+<?php get_header(); ?>
 
-	<?php get_sidebar(); ?>
-</div>
+<div id="main-content-container">
+
+  <main id="site-main" role="main">
+
+    <section class="error-404 not-found">
+
+      <header class="page-header">
+        <h1><?php _e( '404 Not Found', 'siggen' ); ?></h1>
+      </header>
+
+      <div class="entry-content">
+        <p>
+          <?php _e( 'Oops! That page can&rsquo;t be found.', 'siggen' ); ?>
+          <br />
+          <?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'siggen' ); ?>
+        </p>
+        <?php get_search_form(); ?>
+      </div><!-- .entry-content -->
+
+    </section><!-- .error-404 -->
+
+</main><!-- #site-main -->
+
+</div><!-- #main-content-container -->
 
 <?php get_footer(); ?>

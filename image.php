@@ -1,38 +1,50 @@
 <?php
 /**
- * Template for displaying images
+ * Template for displaying Attachments
  *
  * @package Siggen
- * @since Siggen 1.2.1
+ * @since 1.0.0
  */
-get_header(); ?>
+?>
 
-<div class="site-content container">
-	<main>
-    <?php while ( have_posts() ) : the_post(); ?>
-      <?php get_template_part('template-parts/content_header'); ?>
+<?php get_header(); ?>
 
-      <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        <div class="entry-attachment">
-            <?php echo wp_get_attachment_image( get_the_ID(), 'large' ); ?>
-            <?php the_excerpt(); ?>
-        </div>
-      </article>
+<div id="main-content-container">
+  
+  <main id="site-main" role="main">
 
-      <nav id="image-navigation" class="navigation image-navigation">
-        <div class="nav-links">
-          <div class="nav-previous"><?php previous_image_link( false, __( 'Previous Image', 'siggen' ) ); ?></div>
-          <div class="nav-next"><?php next_image_link( false, __( 'Next Image', 'siggen' ) ); ?></div>
+    <?php while ( have_posts() ): the_post(); ?>
+
+      <section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+        <?php get_template_part( 'template-parts/entry', 'header' ); ?>
+        
+        <article class="entry-content">
+          <?php echo wp_get_attachment_image( get_the_ID(), 'fullsize' ); ?>
+          <?php the_excerpt(); ?>
+        </article><!-- .entry-content -->
+
+      </section>
+
+      <footer class="entry-footer">
+        <div class="nav-links image-navigation">
+          <div class="nav-previous">
+            <?php previous_image_link( false, __( 'Previous Image', 'siggen' ) ); ?>
+          </div>
+          <div class="nav-next">
+            <?php next_image_link( false, __( 'Next Image', 'siggen' ) ); ?>
+          </div>
         </div><!-- .nav-links -->
-      </nav><!-- .image-navigation -->
+      </footer><!-- .entry-footer -->
 
-      <?php if ( comments_open() || get_comments_number() ):
-        comments_template();
-      endif; ?>
+      <?php if ( comments_open() || get_comments_number() ) comments_template(); ?>
+      
     <?php endwhile; ?>
-	</main>
-	
-	<?php get_sidebar(); ?>
-</div>
 
-<?php	get_footer(); ?>
+  </main><!-- #site-main -->
+  
+  <?php get_sidebar(); ?>
+
+</div><!-- #main-content-container -->
+
+<?php get_footer(); ?>

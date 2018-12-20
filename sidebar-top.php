@@ -1,12 +1,18 @@
 <?php
 /**
- * Template for displaying a widget area and additional content
+ * Template for displaying widgets above the content
  *
  * @package Siggen
- * @since Siggen 1.0
+ * @since 1.0.0
  */
-if ( is_active_sidebar( 'top-widget-area' )  ) : ?>
-	<div id="top-widget-area" class="sidebar widget-area container" role="complementary">
-		<?php dynamic_sidebar( 'top-widget-area' ); ?>
-	</div><!-- #top-widget-area .sidebar .widget-area -->
+?>
+
+<?php if ( is_active_sidebar( 'top-widget-area' ) ): ?>
+
+  <div id="widget-area-top" class="widget-area" role="complementary">
+
+    <?php dynamic_sidebar( 'top-widget-area' ); ?>
+
+  </div><!-- #widget-area-top -->
+
 <?php endif; ?>

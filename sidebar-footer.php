@@ -1,12 +1,18 @@
 <?php
 /**
- * Template for displaying a widget area and additional content in the footer
+ * Template for displaying widgets below the content
  *
  * @package Siggen
- * @since Siggen 1.0
+ * @since 1.0.0
  */
-if ( is_active_sidebar( 'footer-widget-area' )  ) : ?>
-	<div id="footer-widget-area" class="sidebar widget-area container" role="complementary">
-		<?php dynamic_sidebar( 'footer-widget-area' ); ?>
-	</div><!-- #footer-widget-area .sidebar .widget-area -->
+?>
+
+<?php if ( is_active_sidebar( 'footer-widget-area' ) ): ?>
+
+  <div id="widget-area-footer" class="widget-area" role="complementary">
+
+    <?php dynamic_sidebar( 'footer-widget-area' ); ?>
+
+  </div><!-- #widget-area-footer -->
+
 <?php endif; ?>

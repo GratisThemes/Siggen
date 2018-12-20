@@ -1,0 +1,77 @@
+input,
+textarea,
+select {
+  max-width: calc(100% - 1em);
+  padding: .5em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+input[type="search"],
+textarea,
+select {
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  border: none;
+  border-radius: .15em;
+}
+
+/* iOS not respecting border-radius */
+input[type="search"] {
+  -webkit-appearance: none;
+}
+
+input[type="color"],
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+button {
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  border: none;
+  border-radius: .15em;
+  cursor: pointer;
+  padding: .5em;
+  font-weight: 600;
+}
+
+fieldset {
+  min-width: 0px;
+}
+
+.search-form,
+.post-password-form p:nth-child(2) {
+  display: flex;
+
+  > *:not(:last-child) {
+    margin-right: .25em;
+  }
+}
+
+.post-password-form input[type="password"] {
+  display: block;
+}
+
+.post-password-form input[type="submit"] {
+  position: relative;
+  height: 50%;
+  bottom: 0;
+  margin-top: auto;
+}
+
+.search-form .search-field,
+.post-password-form input[type="password"] {
+  max-width: 100%;
+}
