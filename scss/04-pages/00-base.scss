@@ -73,6 +73,8 @@ body.has-sidebar .site-main {
 }
 
 .content-container {
+  flex-grow: 1;
+  
   > * + * {
     margin-block-start: 4rem;
 
