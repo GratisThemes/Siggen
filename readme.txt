@@ -64,6 +64,9 @@ License: https://creativecommons.org/licenses/by-sa/2.0/
 
 # Changelog
 
+2.0.1 - 2021.08.06
+- Fixed content container not being full width
+
 2.0.0 - 2021.08.06
 Rewritten from the ground up Siggen 2.0 aims to capture the original vision for the theme,
 but with a more modern and clean approach.
