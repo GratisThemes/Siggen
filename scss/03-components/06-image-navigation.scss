@@ -1,0 +1,43 @@
+/* Components: Image navigation */
+.image-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1em;
+  font-size: 1.2rem;
+  font-weight: 700;
+
+  &__previous,
+  &__next {
+    position: relative;
+  }
+
+  &__previous a,
+  &__next a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+  }
+
+  &__previous:hover::after,
+  &__next:hover::after {
+    background-color: var(--text-color);
+    display: block;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: var(--border-width);
+    inset-inline: 0;
+    inset-block-end: 0;
+  }
+
+  &__previous i {
+    margin-inline-end: .5em;
+  }
+
+  &__next i {
+    margin-inline-start: .5em;
+  }
+}

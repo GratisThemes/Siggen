@@ -1,0 +1,47 @@
+/* Components: Author bio */
+.author-bio {
+  display: grid;
+  grid-template-columns: 60px minmax(0, 1fr);
+  grid-gap: .5em;
+  margin-block-start: 2rem;
+  align-items: end;
+  margin-inline: 0;
+  max-width: 74ch;
+
+  .avatar {
+    display: block;
+  }
+
+  &__title,
+  &__description {
+    margin: 0;
+  }
+
+  &__title {
+    font-weight: 600;
+
+    a {
+      text-decoration: none;
+      color: var(--text-color);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__description {
+    grid-column: 1 / 3;
+    font-size: 1rem;
+  }
+}
+
+.content-container .author-bio {
+  margin-block-start: 2rem;
+}
+
+@media (min-width: $screen_tablet) {
+  .content-container .author-bio {
+    margin-block-start: 4rem;
+  } 
+}

@@ -65,3 +65,6 @@ package-lock.json
 
 # Packaged releases
 releases/
+
+# icons
+/assets/icons

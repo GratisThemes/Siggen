@@ -1,0 +1,28 @@
+/* Components: Entry meta */
+.entry-meta {
+  display: flex;
+  flex-direction: column;
+  font-size: .9rem;
+  gap: .5em;
+  align-items: flex-start;
+  font-style: italic;
+  text-align: start;
+  margin-block-start: .5em;
+
+  @media (min-width: $screen_tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: .5em 1em;
+  }
+  
+  i {
+    margin-inline-end: .25em;
+  }
+}
+
+body.single:not(.has-sidebar),
+body.page {
+  .entry-meta {
+    justify-content: center;
+  }
+}

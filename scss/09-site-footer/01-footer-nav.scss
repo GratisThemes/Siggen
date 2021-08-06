@@ -1,0 +1,19 @@
+/* 5.2 Site footer: Footer nav */
+.site-footer-nav {
+  margin: 0 1em;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 .5em;
+  font-weight: 600;
+
+  @media (min-width: $screen_tablet) {
+    gap: 0 1em;
+  }
+
+  a {
+    color: var(--text-color);
+    display: inline-block;
+  }
+}

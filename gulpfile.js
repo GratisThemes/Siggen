@@ -1,32 +1,44 @@
 const gulp    = require( 'gulp' )
 const plumber = require( 'gulp-plumber' )
-const sass    = require( 'gulp-sass' )
+const sass    = require( 'gulp-sass' )(require('sass'))
 const prefix  = require( 'gulp-autoprefixer' )
 const wpPot   = require( 'gulp-wp-pot' )
 const sort    = require( 'gulp-sort' )
 const zip     = require( 'gulp-zip' )
+const rtlcss  = require( 'gulp-rtlcss' )
+const rename  = require( 'gulp-rename' )
+
+const pkg = require('./package.json')
 
 const info = {
   name:      'Siggen',
   slug:      'siggen',
-  version:   '1.3.0',
-  author:    'GratisThemes',
+  version:   pkg.version,
+  author:    'Gratis Themes',
   email:     'gratisthemes@gmail.com',
   bugReport: 'https://github.com/GratisThemes/Siggen/issues'
 }
 
 // CSS
-gulp.task( 'css', () => {
-  gulp.src('./scss/*.scss')
+function css() { 
+  return gulp.src('./scss/*.scss')
     .pipe(plumber())
-    .pipe(sass({ outputStyle: 'expanded', includePaths: ['scss'] }))
+    .pipe(sass({ outputStyle: 'expanded', includePaths: ['scss'] }).on('error', sass.logError))
     .pipe(prefix(['last 30 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
     .pipe(gulp.dest('./'))
-} )
+}
+
+// RTL CSS
+function rtl() {
+  return gulp.src('./style.css')
+    .pipe(rtlcss())
+    .pipe(rename({ suffix: '-rtl' }))
+    .pipe(gulp.dest('./'))
+}
 
 // Pot
-gulp.task('pot', () => {
-  gulp.src('./**/*.php')
+function pot() {
+  return gulp.src('./**/*.php')
     .pipe(plumber())
     .pipe(sort())
     .pipe(wpPot({
@@ -37,30 +49,35 @@ gulp.task('pot', () => {
         team: `${info.author} <${info.email}>`
     }))
     .pipe(gulp.dest(`./languages/${info.slug}.pot`))
-})
+}
 
 // Package
-gulp.task( 'package', () => {
-  gulp.src( [
-    './**/*.*',
-    '!./.git',
-    '!./node_modules/**/*.*',
-    '!./releases/**/*.*',
-    '!./scss/**/*.*',
-    '!./.gitignore',
-    '!./gulpfile.js',
-    '!./package.json',
-    '!./package-lock.json',
-  ], {
-    base: '..'
-  } ).pipe( zip( `${info.slug}_${info.version}.zip` ) )
-     .pipe( gulp.dest( './releases' ) )
-} )
+function package() {
+  return gulp.src( [
+      './*.php',
+      './inc/**/*',
+      './template-parts/**/*',
+      './*.css',
+      './assets/**/*',
+      './languages/**/*',
+      'LICENSE',
+      'readme.txt',
+      'screenshot.png',
+    ], {
+      base: '.'
+    })
+    .pipe(zip(`${info.slug}_${info.version}.zip`))
+    .pipe(gulp.dest('./releases'))
+}
 
 // Watch
-gulp.task('watch', () => {
-  gulp.watch( 'scss/*.scss', { cwd: './' }, [ 'css' ] )
-  gulp.watch( '**/*.php',           { cwd: './' }, [ 'pot' ] )
-})
+function watch() {
+  gulp.watch('scss/**/*.scss', {cwd: './', usePolling: true}, gulp.series( css, rtl ) )
+  gulp.watch('**/*.php',       {cwd: './', usePolling: true}, pot)
+}
 
-gulp.task('default', [ 'watch', 'css', 'pot' ]);
+module.exports.css   = css
+module.exports.rtl   = rtl
+module.exports.pot   = pot
+module.exports.dev   = gulp.series(css, rtl, pot, watch)
+module.exports.build = gulp.series(css, rtl, pot, package)

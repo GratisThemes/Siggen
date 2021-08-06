@@ -1,0 +1,9 @@
+/* Post formats: Chat*/
+body:not(.single) article.format-chat .entry-content {
+  font-family: monospace, monospace;
+  font-weight: 400;
+  
+  p {
+    line-height: 1;
+  }
+}

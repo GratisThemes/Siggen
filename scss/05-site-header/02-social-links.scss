@@ -1,0 +1,14 @@
+/* Site header: Social links */
+.social-links {
+  font-size: 1.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25em;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+    width: 1.5em;
+    color: var(--text-color);
+  }
+}

@@ -1,0 +1,23 @@
+/* Post formats: Quote*/
+body:not(.single) article.format-quote .entry-content {
+  background-color: var(--color-pale);
+  border: var(--border-width) solid var(--color-black);
+  border-radius: var(--border-radius);
+  color: var(--color-black);
+  padding: .5em;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+
+  a {
+    color: var(--color-black);
+  }
+  
+  blockquote {
+    margin-block-end: 0;
+
+    &::before {
+      font-size: 3rem;
+    }
+  }
+}

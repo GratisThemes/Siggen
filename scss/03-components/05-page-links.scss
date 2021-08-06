@@ -1,0 +1,30 @@
+/* Components: Page links */
+.page-links {
+  margin-block-start: 2em;
+  clear: both;
+}
+
+.post-page-numbers {
+  display: inline-block;
+  background-color: var(--color-brown);
+  border: var(--border-width) solid var(--color-black);
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5;
+  text-align: center;
+  box-sizing: content-box;
+  margin-inline-start: .5em;
+  color: var(--color-pale);
+
+  &:hover:not(.current),
+  &.current {
+    background-color: var(--color-pale);
+    color: var(--color-black);
+  }
+}
+
+.post-page-numbers + .post-page-numbers {
+  margin-inline-start: .25em;
+}

@@ -1,0 +1,12 @@
+/* Components: Post thumbnail */
+.post-thumbnail {
+  display: flex;
+  justify-content: center;
+  margin-block: 1rem;
+  margin-inline: auto;
+
+  img {
+    border: var(--border-width) solid var(--color-black);
+    border-radius: var(--border-radius);
+  }
+}

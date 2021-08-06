@@ -1,0 +1,26 @@
+/* Post formats: Image */
+@media (min-width: $screen_tablet) {
+  body:not(.single) article.format-image {
+    .entry-content {
+      img,
+      figure {
+        width: 100% !important;
+        border: none;
+        border-radius: var(--border-radius);
+        margin: 0;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .wp-caption img {
+        border-radius: 0;
+      }
+
+      .wp-caption-text {
+        padding: 1em;
+      }
+    }
+  }
+}

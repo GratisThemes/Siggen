@@ -1,0 +1,112 @@
+/* Widgets: Widgets */
+.widget-title {
+  font-size: 1.7rem;
+  margin: 0;
+  margin-block: 0 .25em;
+
+  @media (min-width: $screen_large_phone) {
+    font-size: 2rem;
+  }
+}
+
+.widget {
+  ul {
+    margin: 0;
+    padding: 0;
+
+    ul {
+      margin-inline-start: 1em;
+    }
+  }
+
+  .wp-caption p {
+    margin: 0;
+  }
+}
+
+.widget_archive,
+.widget_categories,
+.widget_pages,
+.widget_meta,
+.widget_recent_entries,
+.widget_recent_comments,
+.widget_rss,
+.widget_tag_cloud,
+.widget_nav_menu {
+  a {
+    color: var(--text-color);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.widget_archive,
+.widget_categories,
+.widget_pages,
+.widget_meta,
+.widget_recent_entries,
+.widget_recent_comments,
+.widget_rss,
+.widget_nav_menu {
+  ul {
+    list-style: none;
+  }
+}
+
+.widget_recent_comments,
+.widget_rss {
+  a {
+    font-weight: 600;
+  }
+}
+
+.widget_calendar {
+  table {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  td,
+  th {
+    text-align: center;
+    padding: .25em;
+
+    @media (min-width: $screen_laptop) {
+      padding: .5em;
+    }
+  }
+
+  caption {
+    margin-block-end: .5em;
+  }
+
+  .wp-calendar-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.widget_rss {
+  .widget-title {
+    img {
+      display: none;
+    }
+  }
+
+  .rss-date {
+    font-style: italic;
+  }
+
+  li + li {
+    margin-top: 1em;
+  }
+}

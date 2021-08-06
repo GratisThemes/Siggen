@@ -1,0 +1,91 @@
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+body,
+.site-container {
+  min-height: 100vh;
+}
+
+.site-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  > * {
+    padding-inline: calc((100% - #{$screen_laptop}) / 2);
+    margin-inline: 1rem;
+  }
+
+  > * + * {
+    margin-block-start: 2rem;
+
+    @media (min-width: $screen_large_phone) {
+      margin-block-start: 4rem;
+    }
+    @media (min-width: $screen_tablet) {
+      margin-block-start: 6rem;
+    }
+  }
+}
+
+.site-main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2em;
+
+  @media (min-width: $screen_laptop) {
+    gap: 4em;
+  }
+
+  > * {
+    max-width: 100%;
+  }
+}
+
+body.has-sidebar .site-main {
+  > * {
+    max-width: none;
+  }
+
+  .content-container{
+    flex-basis: 0;
+    flex-grow: 999;
+    min-width: 50%;
+  }
+  
+  .widget-area-sidebar {
+    flex-basis: floor($screen_phone - 2);
+    flex-grow: 1;
+    max-width: floor($screen_phone - 2);
+  }
+}
+
+.content-container {
+  > * + * {
+    margin-block-start: 4rem;
+
+    @media (min-width: $screen_tablet) {
+      margin-block-start: 6rem;
+    }
+  }
+}
+
+.content-container > article,
+.content-container > .comments-area,
+.content-container > .comment-respond {
+  > * + * {
+    margin-block-start: 1em;
+  }
+}

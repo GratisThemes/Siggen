@@ -1,0 +1,28 @@
+/* Comments: Comment reply form */
+.comment-respond {
+  display: inline-block;
+  max-width: 100%;
+  
+  .comment-reply-title {
+    margin-block-start: 0;
+  }
+}
+
+.comment-form {
+  label {
+    display: block;
+  }
+
+  .form-submit {
+    margin-block-end: 0;
+  }
+}
+
+.comment .comment-respond {
+  margin-block-start: 2em;
+}
+
+#cancel-comment-reply-link {
+  display: block;
+  font-size: 1rem;
+}

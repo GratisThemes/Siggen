@@ -1,0 +1,47 @@
+/* Base: Root */
+$screen_phone:         20em;      //  320px
+$screen_large_phone:   26.5625em; //  425px
+$screen_tablet:        48em;      //  768px
+$screen_laptop:        64em;      // 1024px
+$screen_large_laptop:  90em;      // 1440px
+$screen_desktop:       120em;     // 1920px
+$screen_large_desktop: 160em;     // 2560px
+:root {
+  // REM/EM cheat sheet, providing 1rem = 16px
+  //  1px = 0.0625rem 
+  //  2px = 0.125rem 
+  //  3px = 0.1875rem 
+  //  4px = 0.25rem 
+  //  6px = 0.375rem 
+  //  8px = 0.5rem 
+  // 10px = 0.625rem 
+  // 12px = 0.75rem 
+  // 14px = 0.875rem 
+  // 16px = 1rem 
+  // 32px = 2rem 
+  // 48px = 3rem 
+  // 64px = 4rem 
+  
+  --color-white: #FFFFFF;
+  --color-black: #0A0909;
+  --color-pale:  #FFF7ED;
+  --color-brown: #4B4339;
+  --color-gray:  #8d8c86;
+
+  --font-family: 'Lora', serif;
+  --site-title-font-family: 'Alex Brush', 'Times New Roman', cursive;
+  --font-size:   1rem;
+  --font-style:  normal;
+
+  --border-width: .0625rem;
+  --border-color: var(--color-brown);
+  --border-radius: .1875em;
+
+  --background-color:      var(--color-black);
+  --text-color:            var(--color-pale);
+  --anchor-color:          var(--color-pale);
+  --site-branding-color:   var(--color-pale);
+  --menu-background-color: var(--color-black);
+  --menu-text-color:       var(--color-pale);
+  --border-color:          var(--color-brown);
+}

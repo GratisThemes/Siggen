@@ -1,0 +1,43 @@
+/* Widgets: Widget areas */
+.widget-areas,
+.widget-area {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  
+  @media (min-width: $screen_tablet) {
+    gap: 2em 4em;
+  }
+}
+
+.widget-areas {
+  @media (min-width: $screen_tablet) {
+    gap: 0;
+  }
+}
+
+.widget-areas-top,
+.widget-areas-footer {
+  @media (min-width: $screen_tablet) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2em;
+
+    > * {
+      width: calc(33% - 2em);
+    }
+  }
+
+  @media (min-width: $screen_laptop) {
+    gap: 4em;
+
+    > * {
+      width: calc(33% - 4em);
+    }
+  }
+}
+
+.widget-area-top {
+  margin-inline: auto;
+}

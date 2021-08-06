@@ -1,0 +1,12 @@
+/* Site header: Base */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 1em;
+  gap: .5em;
+  
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+}

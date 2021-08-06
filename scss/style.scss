@@ -1,100 +1,13 @@
-@charset "UTF-8";
-/*
-  Theme Name: Siggen
-  Theme URI: https://gratisthemes.github.io/siggen
-  Author: Gratis Themes
-  Author URI: https://gratisthemes.github.io/
-  Description: Siggen is a clean and elegant theme with a vintage feel, well suited for product display and updates/blog. The theme has several customization option that let's you completely change the feel of it.
-  Version: 1.3.0
-  License: GNU General Public License v3
-  License URI: http://www.gnu.org/licenses/gpl-3.0.html  
-  Tags: one-column, two-columns, left-sidebar, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, featured-images, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
-  Text Domain: siggen
-
-  Siggen WordPress Theme, Copyright (C) 2016-2019, Gratis Themes
-  Siggen distributed under the terms of the GNU GPL v3
-*/
-
-/* Table of Contents
-  -------------------------------
-  1.0 Normalize
-  2.0 Variables
-  3.0 Layout
-    3.1 Main
-    3.2 Widget areas
-  4.0 Site Header
-    4.1 Navigation
-  5.0 Content
-    5.1 Headers
-    5.2 Thumbnails
-    5.3 Tags and Elements
-    5.4 Form elements
-    5.5 Media
-    5.6 Post formats
-    5.7 Footers
-    5.8 Alignment
-  6.0 Comments
-  7.0 Widgets
-  8.0 Site footer
-  9.0 Accesibility
-*/
-
-/* 1.0 Normalize */
-@import "normalize";
-
-/* 2.0 Variables */
-@import "variables";
-
-/* 3.0 Layout */
-@import "layout";
-
-/* 3.1 Layout: Main */
-@import "layout-main";
-
-/* 3.2 Layout: Widget Areas */
-@import "layout-widget-areas";
-
-/* 4.0 Site Header */
-@import "site-header";
-
-/* 4.1 Site Header: Navigation */
-@import "site-header-navigation";
-
-/* 5.0 Content */
-@import "content";
-
-/* 5.1 Content: Headers */
-@import "content-headers";
-
-/* 5.2 Content: Thumbnails */
-@import "content-thumbnails";
-
-/* 5.3 Content: Tags and Elements */
-@import "content-tags-and-elements";
-
-/* 5.4 Content: Form elements */
-@import "content-form-elements";
-
-/* 5.5 Content: Media */
-@import "content-media";
-
-/* 5.6 Content: Post formats */
-@import "content-post-formats";
-
-/* 5.7 Content: Footers */
-@import "content-footers";
-
-/* 5.8 Content: Alignment */
-@import "content-alignment";
-
-/* 6.0 Comments */
-@import "comments";
-
-/* 7.0 Widgets */
-@import "widgets";
-
-/* 8.0 Site footer */
-@import "site-footer";
-
-/* 9.0 Accesibility */
-@import "accessibility";
+@import "file-header";
+@import "table-of-contents";
+@import "00-normalize";
+@import "01-base";
+@import "02-classes";
+@import "03-components";
+@import "04-pages";
+@import "05-site-header";
+@import "06-hero";
+@import "07-comments";
+@import "08-widgets";
+@import "09-site-footer";
+@import "10-post-formats";

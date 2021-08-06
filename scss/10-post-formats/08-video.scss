@@ -1,0 +1,14 @@
+/* Post formats: Video*/
+body:not(.single) article.format-video {
+  .entry-content {
+    iframe,
+    embed,
+    object {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+      aspect-ratio: attr(width) / attr(height);
+      vertical-align: bottom;
+    }
+  }
+}

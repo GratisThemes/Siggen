@@ -1,0 +1,19 @@
+/* Components: Post edit link */
+.entry-header .post-edit-link {
+  position: absolute;
+  display: inline-block;
+  background-color: var(--color-brown);
+  color: var(--color-pale);
+  inset-block-start: .25em;
+  inset-inline-end: .25em;
+  padding: .25em .5em;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    background-color: var(--color-pale);
+    color: var(--color-black);
+    text-decoration: none;
+  }
+}
