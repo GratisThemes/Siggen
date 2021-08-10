@@ -5,7 +5,7 @@
   Author: Gratis Themes
   Author URI: https://gratisthemes.kniffen.dev/
   Description: Create a website with posts about the history of antique collecting, or how to get the best deals for vintage products.
-  Version: 2.0.1
+  Version: 2.0.2
   Requires at least: 5.0
   Tested up to: 5.7
   Requires PHP: 7.0
@@ -562,12 +562,13 @@ dd {
 
 ul,
 ol {
-  margin: 0 0 0 2em;
+  -webkit-margin-start: 2em;
+          margin-inline-start: 2em;
   padding: 0;
 }
 
 li {
-  line-height: 2;
+  margin-block: 0.65em;
 }
 
 /* Base: Tables */
@@ -1877,7 +1878,7 @@ body.home:not(.paged) .hero {
   margin: 2em 0 0 1em;
 }
 
-.comment + .comment {
+.comment-list > * + * {
   -webkit-margin-before: 2em;
           margin-block-start: 2em;
   border-top: var(--border-width) dashed var(--color-brown);

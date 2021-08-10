@@ -64,6 +64,10 @@ License: https://creativecommons.org/licenses/by-sa/2.0/
 
 # Changelog
 
+2.0.2 - 2021.08.10
+- Fixed spacing around pingbacks not being styled the same as comments
+- Fixed list spacing
+
 2.0.1 - 2021.08.06
 - Fixed content container not being full width
 
