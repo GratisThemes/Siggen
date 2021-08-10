@@ -19,7 +19,11 @@
   "keywords": [
     "wordpress"
   ],
-  "author": "Gratis Themes",
+  "author": {
+    "name": "Gratis Themes",
+    "email": "gratisthemes@gmail.com",
+    "url": "https://gratisthemes.kniffen.dev"
+  },
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/GratisThemes/Siggen/issues"

@@ -10,15 +10,6 @@ const rename  = require( 'gulp-rename' )
 
 const pkg = require('./package.json')
 
-const info = {
-  name:      'Siggen',
-  slug:      'siggen',
-  version:   pkg.version,
-  author:    'Gratis Themes',
-  email:     'gratisthemes@gmail.com',
-  bugReport: 'https://github.com/GratisThemes/Siggen/issues'
-}
-
 // CSS
 function css() { 
   return gulp.src('./scss/*.scss')
@@ -42,13 +33,13 @@ function pot() {
     .pipe(plumber())
     .pipe(sort())
     .pipe(wpPot({
-        domain: info.slug,
-        package: info.slug,
-        bugReport: info.bugReport,
-        lastTranslator: `${info.author} <${info.email}>`,
-        team: `${info.author} <${info.email}>`
+      domain: pkg.name,
+      package: pkg.name,
+      bugReport: pkg.bugs.url,
+      lastTranslator: `${pkg.author.name} <${pkg.author.email}>`,
+      team: `${pkg.author.name} <${pkg.author.email}>`
     }))
-    .pipe(gulp.dest(`./languages/${info.slug}.pot`))
+    .pipe(gulp.dest(`./languages/${pkg.name}.pot`))
 }
 
 // Package
@@ -66,7 +57,7 @@ function package() {
     ], {
       base: '.'
     })
-    .pipe(zip(`${info.slug}_${info.version}.zip`))
+    .pipe(zip(`${pkg.name}_${pkg.version}.zip`))
     .pipe(gulp.dest('./releases'))
 }
 
