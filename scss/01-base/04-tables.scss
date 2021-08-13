@@ -8,7 +8,6 @@ th {
 table {
   display: inline-block;
   border-spacing: 0;
-  border-collapse: collapse;
   max-width: 100%;
   overflow-x: auto;
   white-space: nowrap;
@@ -17,6 +16,7 @@ table {
   @media (min-width: $screen_large_phone) {
     display: table;
     white-space: initial;
+    border-collapse: collapse;
   }
 }
 
