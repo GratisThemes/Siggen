@@ -15,6 +15,28 @@
   text-align: center;
 }
 
+.alignwide {
+  @media (min-width: $screen_laptop) {
+    width: calc(100% + 2rem);
+    max-width: calc(100% + 2rem);
+    margin: 0 auto 1em -1rem;
+  }
+}
+
+.alignfull {
+  margin-left: calc(50% - 50vw);
+  width: 100vw;
+  max-width: 100vw;
+
+  p {
+    padding: .5em;
+  }
+  
+  img {
+    border-radius: 0;
+  }
+}
+
 /* Clear floats */
 .entry-content::after {
   content: "";

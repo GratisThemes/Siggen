@@ -42,6 +42,8 @@ if ( ! function_exists( 'siggen_setup' ) ) {
     /* https://codex.wordpress.org/Post_Thumbnails */
     add_theme_support( 'post-thumbnails' );
 
+    add_theme_support( 'align-wide' );
+
     /* https://codex.wordpress.org/Custom_Backgrounds */
     add_theme_support(
       'custom-background',
