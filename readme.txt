@@ -64,6 +64,11 @@ License: https://creativecommons.org/licenses/by-sa/2.0/
 
 # Changelog
 
+2.1.0 - 2021.08.13
+- Added basic block styles support
+- Added support for .alignwide and .alignfull
+- Fixed footer text setting not working
+
 2.0.2 - 2021.08.10
 - Fixed spacing around pingbacks not being styled the same as comments
 - Fixed list spacing
