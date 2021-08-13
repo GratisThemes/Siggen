@@ -29,7 +29,7 @@
     if ( '' !== $siggen_site_title ) {
       printf(
         '<span>%1$s %2$s %3$s</span>',
-        esc_html( $siggen_site_title ),
+        esc_html( get_theme_mod( 'footer_text', $siggen_site_title ) ),
         get_theme_mod( 'footer_copyright', true ) ? '&copy;' : '',
         get_theme_mod( 'footer_year', true ) ? gmdate( 'Y' ) : '' // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
       );
