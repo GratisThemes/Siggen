@@ -1,4 +1,4 @@
-# Copyright (C) 2021 siggen
+# Copyright (C) 2022 siggen
 # This file is distributed under the same license as the siggen package.
 msgid ""
 msgstr ""

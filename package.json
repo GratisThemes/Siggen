@@ -1,6 +1,6 @@
 {
   "name": "siggen",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Elegant WordPress theme with a vintage feel",
   "private": true,
   "scripts": {
@@ -22,7 +22,7 @@
   "author": {
     "name": "Gratis Themes",
     "email": "gratisthemes@gmail.com",
-    "url": "https://gratisthemes.kniffen.dev"
+    "url": "https://gratis-themes.com"
   },
   "license": "GPL-3.0",
   "bugs": {
